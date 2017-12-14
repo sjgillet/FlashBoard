@@ -10,6 +10,16 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
+    <description></description>
+    <display-name>SampleServlet</display-name>
+    <servlet-name>SampleServlet</servlet-name>
+    <servlet-class>io.blitz.flashboard.servlet.SampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SampleServlet</servlet-name>
+    <url-pattern>/SampleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
   	<servlet-name>RestService</servlet-name>
   	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
   	<init-param>
